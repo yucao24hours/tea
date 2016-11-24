@@ -65,6 +65,9 @@ ja:
         cost: 送料
         border: 無料条件
     errors:
+      messages:
+        record_invalid: "バリデーションに失敗しました: %{errors}"
+
       models:
         user:
           blank:   '%{attribute}が入力されていません。'
