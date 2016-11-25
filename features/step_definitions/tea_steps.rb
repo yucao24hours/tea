@@ -160,6 +160,12 @@ Then /^引換済み商品ページに飛ぶこと$/ do
   expect(page.current_path)
 end
 
+もし(/^ネスレに発注する商品一覧を見る$/) do
+  within "#menu" do
+    click_link "ネスレ入力用ページ"
+  end
+end
+
 module StepDefinitionsUtil
   #日→英だし、step以外では使わないのでI18でやらないことにする
   def to_class_in_details_table(col_name)
