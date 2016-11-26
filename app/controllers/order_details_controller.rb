@@ -17,7 +17,7 @@ class OrderDetailsController < ApplicationController
 
   def destroy
     @detail = OrderDetail.find(params[:id])
-    OrderDetail.destroy @detail
+    OrderDetail.destroy @detail.id
 
     redirect_to order_path, flash: {success: "#{@detail.item.name}の注文を削除しました。"}
   end
