@@ -4,10 +4,6 @@
 # instead of editing this one. Cucumber will automatically load all features/**/*.rb
 # files.
 require 'cucumber/rails'
-require 'cucumber/rails/world'
-require 'capybara/cucumber'
-require 'capybara/session'
-
 ENV["RAILS_ENV"] ||= "test"
 
 # Capybara defaults to CSS3 selectors rather than XPath.
