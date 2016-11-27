@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.1.2'
 
-gem "rails", "4.2.6"
+gem "rails", "4.2.7"
 
 gem "dotenv-rails"
 gem 'coffee-rails', '~> 4.0.0'
