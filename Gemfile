@@ -19,7 +19,6 @@ gem 'zeroclipboard-rails'
 group :development do
   gem 'annotate'
   gem 'bullet'
-  gem 'quiet_assets'
   gem 'spring'
 end
 
