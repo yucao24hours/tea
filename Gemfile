@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
-ruby '2.1.2'
+ruby "2.3.1"
 
-gem "rails", "4.2.7"
+gem "rails", "5.0.0"
 
 gem "dotenv-rails"
 gem 'coffee-rails', '~> 4.0.0'
