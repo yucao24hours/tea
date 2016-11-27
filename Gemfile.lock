@@ -277,7 +277,6 @@ DEPENDENCIES
   capybara
   capybara-webkit
   coffee-rails
-  cucumber
   cucumber-rails
   database_cleaner
   database_rewinder
