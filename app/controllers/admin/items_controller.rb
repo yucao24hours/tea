@@ -51,7 +51,7 @@ class Admin::ItemsController < ApplicationController
     @items = Item.all.order(:nestle_index_from_the_top)
 
     if @item.can_destroy?
-      Item.destroy @item
+      Item.destroy(@item.id)
       be_non_negative_integer!
 
       flash[:success] = "#{@item.name}を削除しました。"

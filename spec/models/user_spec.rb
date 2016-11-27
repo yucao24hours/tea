@@ -37,7 +37,7 @@ describe User do
     end
 
     it 'alice.orderだけ消去すると、alice.order_detailsが消える。aliceのorderをコールバックでは作らない。' do
-      Order.find(alice.order).destroy
+      Order.find(alice.order.id).destroy
 
       expect(User.find(alice).order).to eq nil
     end

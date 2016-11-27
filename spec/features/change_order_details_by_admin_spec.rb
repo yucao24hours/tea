@@ -77,7 +77,7 @@ feature '管理者ページからユーザーの注文を変更する' do
   context '注文期間未設定の時編集ページに来た時' do
     background do
       alice.order.order_details.each do |detail|
-        OrderDetail.destroy detail
+        OrderDetail.destroy(detail.id)
       end
 
       Period.set_undefined_times!

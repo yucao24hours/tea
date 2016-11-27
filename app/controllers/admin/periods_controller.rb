@@ -31,7 +31,7 @@ class Admin::PeriodsController < ApplicationController
 
   def destroy
     User.all.each do |user|
-      Order.destroy user.order
+      Order.destroy(user.order.id)
       user.create_order
     end
 
