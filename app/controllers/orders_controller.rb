@@ -3,7 +3,7 @@ class OrdersController < ApplicationController
   before_action :need_logged_in
 
   def show
-    @order = User.includes(order: {order_details: :item}).find(current_user).order
+    @order = User.includes(order: {order_details: :item}).find(current_user.id).order
     @items = Item.order(:id)
   end
 

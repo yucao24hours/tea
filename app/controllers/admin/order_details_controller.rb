@@ -24,7 +24,7 @@ class Admin::OrderDetailsController < ApplicationController
   def destroy
     order_detail = OrderDetail.find(params[:id])
 
-    OrderDetail.destroy order_detail
+    OrderDetail.destroy(order_detail.id)
 
     redirect_to admin_user_order_details_path(order_detail.order.user),
                 flash: {success: "#{order_detail.item.name}を削除しました。"}

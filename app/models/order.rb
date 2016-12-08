@@ -49,7 +49,7 @@ class Order < ActiveRecord::Base
 
   def empty_order?
     #order_details.empty? をN+1対策しつつ書くのでこうなる。
-    self.class.includes(:order_details).find(self).order_details.empty?
+    self.class.includes(:order_details).find(self.id).order_details.empty?
   end
 
   def non_empty_order?

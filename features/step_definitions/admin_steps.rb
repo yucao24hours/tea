@@ -1,10 +1,6 @@
-require "#{File.expand_path(__dir__)}/../../spec/support/example_helper"
-include ExampleHelper
-
 Given /^引換用ページにいる$/ do
   visit '/orders/arrived'
 end
-
 
 When /^注文をネスレに発注する$/ do
   visit '/orders/registered'
